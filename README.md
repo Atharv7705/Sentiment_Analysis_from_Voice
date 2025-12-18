@@ -1,108 +1,85 @@
-\# 🎤 Sentiment Analysis from Voice  
+#  Sentiment Analysis from Voice
 
-A machine learning project that records a user's voice, converts the speech into text, and performs sentiment analysis to determine whether the user sounds Positive, Negative, or Neutral.  
-
-
+A machine learning project that records audio from the user, converts speech to text, and performs sentiment analysis using state-of-the-art NLP models. The system identifies whether the spoken input is Positive, Negative, or Neutral and displays a confidence score. Includes a Streamlit-based web frontend.
 
 ---
 
-
-
-\## 🚀 Features
-
-\- 🎙 Voice recording (via microphone)
-
-\- 🔊 Audio-to-text conversion using Google Speech Recognition
-
-\- 🤖 Sentiment classification using HuggingFace Transformers
-
-\- 📊 Confidence score output
-
-\- 🖥 Streamlit-based web frontend
-
-\- 🗄 Optional database storage for logs (SQLite)
-
-
+##  Features
+- Voice recording from microphone  
+- Speech-to-text using Google Web Speech API  
+- Sentiment Analysis using HuggingFace Transformers  
+- Confidence score output  
+- Web-based UI using Streamlit  
+- Lightweight and easy to deploy  
 
 ---
 
+## Tech Stack
 
+### Frontend
+- Streamlit
 
-\## 🧠 Project Architecture
-
-
-
-\*\*Voice Input → WAV File → Speech Recognition → Text → Sentiment Model → Output\*\*
-
-
-
----
-
-
-
-\## 🛠 Tech Stack
-
-
-
-\### \*\*Frontend\*\*
-
-\- Streamlit (Python Web UI)
-
-
-
-\### \*\*Backend\*\*
-
-\- Python 3.10+
-
-\- Transformers (HuggingFace)
-
-\- Torch
-
-\- SpeechRecognition
-
-\- SoundDevice
-
-\- SciPy
-
-
-
-\### \*\*APIs / Models\*\*
-
-\- Google Web Speech API (for speech-to-text)
-
-\- HuggingFace Transformers pipeline (for sentiment analysis)
-
-
-
-\### \*\*Database (Optional)\*\*
-
-\- SQLite (local)
-
-\- SQLAlchemy (ORM)
-
-
+### Backend
+- Python 3.10+
+- SpeechRecognition  
+- SoundDevice  
+- SciPy  
+- Transformers (HuggingFace)  
+- PyTorch  
 
 ---
 
-
-
-\## 📦 Folder Structure
-
-
+##  Project Structure
 
 sentiment-analysis/
 
 │
 
-├── app.py # Streamlit frontend
+├── app.py # Streamlit frontend + backend logic
 
-├── sentiment\_core.py # Backend logic (optional)
-
-├── temp.wav # Temporary audio file
+├── temp.wav # Temporary recorded audio file
 
 ├── requirements.txt
 
-├── database.db # SQLite DB (optional)
-
 └── README.md
+
+
+---
+
+# ⚙️ Setup Instructions
+
+Follow these steps to run the project smoothly.
+
+---
+
+setup_steps:
+  - step: 1
+    title: Clone the Repository
+    commands:
+      - git clone <(https://github.com/atharvhalwai/Sentiment_Analysis_from_Voice.git)>
+      - cd sentiment-analysis
+
+  - step: 2
+    title: Create Virtual Environment
+    commands:
+      - python -m venv venv
+
+  - step: 3
+    title: Activate Virtual Environment
+    commands:
+      windows:
+        - venv\Scripts\activate
+      linux_mac:
+        - source venv/bin/activate
+
+  - step: 4
+    title: Install Dependencies
+    commands:
+      - pip install --upgrade pip
+      - pip install streamlit sounddevice scipy SpeechRecognition transformers==4.36.2 torch numpy requests
+
+  - step: 5
+    title: Run the Application
+    commands:
+      - python -m streamlit run app.py
 
