@@ -56,7 +56,7 @@ setup_steps:
   - step: 1
     title: Clone the Repository
     commands:
-      - git clone https://github.com/atharvhalwai/Sentiment_Analysis_from_Voice.git
+      - git clone [https://github.com/atharvhalwai/Sentiment_Analysis_from_Voice.git](https://github.com/Atharv7705/Sentiment_Analysis_from_Voice.git)
       - cd sentiment-analysis
 
   - step: 2
@@ -82,4 +82,5 @@ setup_steps:
     title: Run the Application
     commands:
       - python -m streamlit run app.py
+
 
