@@ -1,0 +1,8 @@
+streamlit
+sounddevice
+scipy
+SpeechRecognition
+transformers==4.36.2
+torch
+numpy
+requests
