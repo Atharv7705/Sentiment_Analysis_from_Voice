@@ -82,5 +82,10 @@ setup_steps:
     title: Run the Application
     commands:
       - python -m streamlit run app.py
+## 📸 Output
+
+Below is a sample output of the application:
+
+![Sentiment Analysis Output](Screenshot_2025-12-18_232551.png)
 
 
