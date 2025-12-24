@@ -86,6 +86,8 @@ setup_steps:
 
 Below is a sample output of the application:
 
-![Sentiment Analysis Output](Screenshot_2025-12-18_232551.png)
+<img width="1779" height="970" alt="Screenshot 2025-12-18 232551" src="https://github.com/user-attachments/assets/9404f2c6-bb71-4daf-9bc6-e59d5379e916" />
+
+
 
 
